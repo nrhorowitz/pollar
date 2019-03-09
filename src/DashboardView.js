@@ -50,7 +50,7 @@ class DashboardView extends React.Component {
           </Grid>
 
           <Grid container="true"
-                justify="space-around">
+                justify="center">
             <Grid item="true" sm>
               {this.createNewButton('MY POLLS', 1)}
             </Grid>
@@ -60,7 +60,7 @@ class DashboardView extends React.Component {
           </Grid>
 
           <Grid container="true"
-                justify="space-around">
+                justify="center">
             <Grid item="true" sm>
               {this.createNewButton('FOLLOWED POLLS', 1)}
             </Grid>
