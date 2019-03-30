@@ -9,10 +9,10 @@ class DashboardView extends React.Component {
   constructor(props) {
     super(props);
     this.createNewButton = this.createNewButton.bind(this);
+    this.changePage = this.changePage.bind(this);
   }
 
   changePage(direction) {
-      alert(this.props.currentView)
       if (direction === 4) {
           this.props.segueToCreateNewPollView()
       }
@@ -36,12 +36,6 @@ class DashboardView extends React.Component {
     return(
       <div>
         <Grid direction="row">
-          <Grid container="true">
-            <Grid item="true">
-              DashboardView
-            </Grid>
-          </Grid>
-
           <Grid container="true"
                 direction="column">
             <Grid item>

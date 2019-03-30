@@ -18,6 +18,7 @@ class App extends Component {
 
     this.segueToLoginView = this.segueToLoginView.bind(this);
     this.segueToDashboardView = this.segueToDashboardView.bind(this);
+    this.segueToCreateNewPollView = this.segueToCreateNewPollView.bind(this);
   }
 
   componentDidMount() {
@@ -33,8 +34,7 @@ class App extends Component {
   }
 
   segueToCreateNewPollView() {
-    //this.setState({currentView: 4});
-    this.state.currentView = 4;
+    this.setState({currentView: 4});
   }
 
   currentPage() {
